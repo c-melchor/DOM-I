@@ -54,27 +54,19 @@ const bigLogo = document.getElementById('cta-img');
 bigLogo.setAttribute('src', '/img/header-img.png')
 bigLogo.style.marginLeft='4rem'
 
-// const firstATag = document.querySelector('a');
-// firstATag.textContent='Services'
 
 const aTags = document.querySelectorAll('a');
 let aTagArray = Array.from(aTags);
 let stringArray = ['Services', 'Products','Vision','Features','About','Contact'];
+// console.log(aTagArray);
+// console.log(aTags);
 
-for(let i =0;i < aTagArray.length; i++){
-  aTagArray.map(item =>{
-    item.textContent = stringArray[i];
-  })
+for(let i = 0; i < stringArray.length; i++){
+ aTagArray.map((item,index) => item.textContent=stringArray[index])
 }
 
-// aTagArray[0].textContent='Services';
-// aTagArray[1].textContent='Product';
-// aTagArray[2].textContent='Vision';
-// aTagArray[3].textContent='Features';
-// aTagArray[4].textContent='About';
-// aTagArray[5].textContent='Contact';
 
-//fix using loop/.map()
+
 
 
 const headerOne = document.querySelector('.cta-text h1');
