@@ -38,5 +38,29 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+// let logo = document.getElementById("logo-img");
+// logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+let logo = document.getElementById('logo-img')
+logo.setAttribute('src', '/img/logo.png')
+
+
+//how to add a tags via DOM
+//nav bar code here
+
+
+const bigLogo = document.getElementById('cta-img');
+bigLogo.setAttribute('src', '/img/header-img.png')
+bigLogo.style.marginLeft='4rem'
+
+
+const headerOne = document.querySelector('.cta-text h1');
+headerOne.textContent='DOM IS AWESOME'
+headerOne.style.width='10rem'
+
+const buttonStyle = document.querySelector('.cta-text button');
+buttonStyle.textContent='Get Started'
+
+const midImg = document.getElementById('middle-img');
+midImg.setAttribute('src', '/img/mid-page-accent.jpg')
