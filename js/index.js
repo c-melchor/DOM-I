@@ -59,14 +59,22 @@ bigLogo.style.marginLeft='4rem'
 
 const aTags = document.querySelectorAll('a');
 let aTagArray = Array.from(aTags);
-aTagArray[0].textContent='Services';
-aTagArray[1].textContent='Product';
-aTagArray[2].textContent='Vision';
-aTagArray[3].textContent='Features';
-aTagArray[4].textContent='About';
-aTagArray[5].textContent='Contact';
+let stringArray = ['Services', 'Products','Vision','Features','About','Contact'];
 
-//ask about keeping this part DRY
+for(let i =0;i < aTagArray.length; i++){
+  aTagArray.map(item =>{
+    item.textContent = stringArray[i];
+  })
+}
+
+// aTagArray[0].textContent='Services';
+// aTagArray[1].textContent='Product';
+// aTagArray[2].textContent='Vision';
+// aTagArray[3].textContent='Features';
+// aTagArray[4].textContent='About';
+// aTagArray[5].textContent='Contact';
+
+//fix using loop/.map()
 
 
 const headerOne = document.querySelector('.cta-text h1');
