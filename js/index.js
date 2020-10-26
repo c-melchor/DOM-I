@@ -55,15 +55,21 @@ bigLogo.setAttribute('src', '/img/header-img.png')
 bigLogo.style.marginLeft='4rem'
 
 
-const aTags = document.querySelectorAll('a');
+const aTags = document.querySelectorAll(' nav a');
 let aTagArray = Array.from(aTags);
 let stringArray = ['Services', 'Products','Vision','Features','About','Contact'];
-// console.log(aTagArray);
-// console.log(aTags);
 
 for(let i = 0; i < stringArray.length; i++){
- aTagArray.map((item,index) => item.textContent=stringArray[index])
-}
+  let aTagColor = aTagArray.map((item,index) => item.textContent=stringArray[index])
+ }
+
+console.log(aTags)
+
+
+const headNavColor = document.querySelectorAll('header nav a')
+headNavColor.forEach(item => item.style.color='green')
+
+
 
 
 const headerOne = document.querySelector('.cta-text h1');
@@ -130,7 +136,7 @@ const footerTitle = document.querySelector('.contact h4')
 footerTitle.textContent=`Contact`
 
 const address1 = footerTitle.nextElementSibling
-address1.textContent="123 Way 456 Street Somewhere, USA "
+address1.textContent="123 Way 456 Street" + "\n" + " Somewhere, USA"
 
 const phoneNum = address1.nextElementSibling;
 phoneNum.textContent="1 (888) 888-8888 "
@@ -140,3 +146,7 @@ email.textContent="sales@greatidea.io"
 
 const footer = document.querySelector('footer p')
 footer.textContent=`Copyright Great Idea! 2018`
+
+//need to do NAV color
+//need to add 2 new nav items
+
