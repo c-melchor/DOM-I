@@ -110,7 +110,7 @@ in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at 
 scelerisque quis`
 
 const botDivHead2 = document.querySelector('.bottom-content .text-content:nth-of-type(2) h4')
-console.log(botDivHead2)
+// console.log(botDivHead2)
 botDivHead2.textContent='Product';
 
 const botDivPara2 = document.querySelector('.bottom-content .text-content:nth-of-type(2) p')
@@ -129,8 +129,14 @@ scelerisque quis.`
 const footerTitle = document.querySelector('.contact h4')
 footerTitle.textContent=`Contact`
 
-const address = footerTitle.nextElementSibling
-address.textContent=`123 Way 456 Street
-Somewhere, USA 
-1 (888) 888-8888 
-sales@greatidea.io`
+const address1 = footerTitle.nextElementSibling
+address1.textContent="123 Way 456 Street Somewhere, USA "
+
+const phoneNum = address1.nextElementSibling;
+phoneNum.textContent="1 (888) 888-8888 "
+
+const email =phoneNum.nextElementSibling;
+email.textContent="sales@greatidea.io"
+
+const footer = document.querySelector('footer p')
+footer.textContent=`Copyright Great Idea! 2018`
