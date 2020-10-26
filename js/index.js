@@ -66,9 +66,6 @@ for(let i = 0; i < stringArray.length; i++){
 }
 
 
-
-
-
 const headerOne = document.querySelector('.cta-text h1');
 headerOne.textContent='DOM IS AWESOME'
 headerOne.style.width='10rem'
@@ -80,3 +77,32 @@ buttonStyle.textContent='Get Started'
 
 const midImg = document.getElementById('middle-img');
 midImg.setAttribute('src', '/img/mid-page-accent.jpg')
+
+
+
+const topContent = document.querySelectorAll('.top-content .text-content');
+
+const topContArr = Array.from(topContent);
+console.log(topContArr)
+
+const topDivTitle = document.querySelector('.top-content .text-content h4')
+
+topDivTitle.textContent=`Feaures`
+
+const topDivPara = topDivTitle.nextElementSibling;
+topDivPara.textContent=`Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odi
+in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.`
+
+
+const topDivTitle2 = document.querySelector('.top-content .text-content:nth-of-type(2) h4');
+topDivTitle2.textContent='About';
+const topDivPara2 = document.querySelector('.top-content .text-content:nth-of-type(2) p');
+topDivPara2.textContent=`About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
+interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.`
+
+
+// const firstMidSection = document.querySelector('main.content');
+// firstMidSection.style.flexWrap='nowrap';
+// firstMidSection.style.border='solid 1px black'
