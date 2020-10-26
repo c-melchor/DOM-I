@@ -57,13 +57,21 @@ bigLogo.style.marginLeft='4rem'
 
 const aTags = document.querySelectorAll(' nav a');
 let aTagArray = Array.from(aTags);
-let stringArray = ['Services', 'Products','Vision','Features','About','Contact'];
+let stringArray = ['Services','Products','Vision','Features','About','Contact'];
 
 for(let i = 0; i < stringArray.length; i++){
   let aTagColor = aTagArray.map((item,index) => item.textContent=stringArray[index])
  }
 
 console.log(aTags)
+
+const newNavTag = document.createElement('a')
+newNavTag.innerHTML='FAQ'
+document.querySelector('nav').appendChild(newNavTag)
+
+const newNavTag2 = document.createElement('a')
+newNavTag2.innerHTML='Careers'
+document.querySelector('nav').prepend(newNavTag2)
 
 
 const headNavColor = document.querySelectorAll('header nav a')
@@ -74,8 +82,7 @@ headNavColor.forEach(item => item.style.color='green')
 
 const headerOne = document.querySelector('.cta-text h1');
 headerOne.textContent='DOM IS AWESOME'
-headerOne.style.width='10rem'
-
+headerOne.style.width='11rem'
 
 const buttonStyle = document.querySelector('.cta-text button');
 buttonStyle.textContent='Get Started'
@@ -93,7 +100,7 @@ console.log(topContArr)
 
 const topDivTitle = document.querySelector('.top-content .text-content h4')
 
-topDivTitle.textContent=`Feaures`
+topDivTitle.textContent=`Features`
 
 const topDivPara = topDivTitle.nextElementSibling;
 topDivPara.textContent=`Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odi
@@ -135,8 +142,8 @@ scelerisque quis.`
 const footerTitle = document.querySelector('.contact h4')
 footerTitle.textContent=`Contact`
 
-const address1 = footerTitle.nextElementSibling
-address1.textContent="123 Way 456 Street" + "\n" + " Somewhere, USA"
+const address1 = footerTitle.nextElementSibling;
+address1.innerText="123 Way 456 Street\n Somewhere, USA"
 
 const phoneNum = address1.nextElementSibling;
 phoneNum.textContent="1 (888) 888-8888 "
@@ -147,6 +154,6 @@ email.textContent="sales@greatidea.io"
 const footer = document.querySelector('footer p')
 footer.textContent=`Copyright Great Idea! 2018`
 
-//need to do NAV color
+
 //need to add 2 new nav items
 
