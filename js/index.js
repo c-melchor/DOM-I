@@ -102,7 +102,35 @@ topDivPara2.textContent=`About content elementum magna eros, ac posuere elvit te
 interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
 scelerisque quis.`
 
+const botDivHead = document.querySelector('.bottom-content .text-content h4')
+botDivHead.textContent='Services';
+const botDivPara = document.querySelector('.bottom-content .text-content p')
+botDivPara.textContent=`Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,
+in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis`
 
-// const firstMidSection = document.querySelector('main.content');
-// firstMidSection.style.flexWrap='nowrap';
-// firstMidSection.style.border='solid 1px black'
+const botDivHead2 = document.querySelector('.bottom-content .text-content:nth-of-type(2) h4')
+console.log(botDivHead2)
+botDivHead2.textContent='Product';
+
+const botDivPara2 = document.querySelector('.bottom-content .text-content:nth-of-type(2) p')
+botDivPara2.textContent=`Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
+interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.`
+
+const botDivHead3 = document.querySelector('.bottom-content .text-content:nth-of-type(3) h4')
+botDivHead3.textContent = `Vision`
+
+const botDivPara3 = document.querySelector('.bottom-content .text-content:nth-of-type(3) p')
+botDivPara3.textContent=`Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
+interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.`
+
+const footerTitle = document.querySelector('.contact h4')
+footerTitle.textContent=`Contact`
+
+const address = footerTitle.nextElementSibling
+address.textContent=`123 Way 456 Street
+Somewhere, USA 
+1 (888) 888-8888 
+sales@greatidea.io`
