@@ -51,7 +51,7 @@ logo.setAttribute('src', '/img/logo.png')
 
 
 const bigLogo = document.getElementById('cta-img');
-bigLogo.setAttribute('src', '/img/header-img.png')
+bigLogo.setAttribute('src', siteContent['cta']['img-src'])
 bigLogo.style.marginLeft='4rem'
 
 
@@ -88,7 +88,7 @@ buttonStyle.textContent='Get Started'
 
 
 const midImg = document.getElementById('middle-img');
-midImg.setAttribute('src', '/img/mid-page-accent.jpg')
+midImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
 
 
 
