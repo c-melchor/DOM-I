@@ -81,8 +81,7 @@ headNavColor.forEach(item => item.style.color='green')
 
 
 const headerOne = document.querySelector('.cta-text h1');
-headerOne.textContent='DOM IS AWESOME'
-headerOne.style.width='11rem'
+headerOne.innerText='DOM\n IS \nAWESOME'
 
 const buttonStyle = document.querySelector('.cta-text button');
 buttonStyle.textContent='Get Started'
