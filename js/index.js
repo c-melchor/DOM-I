@@ -102,41 +102,31 @@ const topDivTitle = document.querySelector('.top-content .text-content h4')
 topDivTitle.textContent=`Features`
 
 const topDivPara = topDivTitle.nextElementSibling;
-topDivPara.textContent=`Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odi
-in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.`
+topDivPara.textContent=siteContent['main-content']['features-content']
 
 
 const topDivTitle2 = document.querySelector('.top-content .text-content:nth-of-type(2) h4');
 topDivTitle2.textContent='About';
 const topDivPara2 = document.querySelector('.top-content .text-content:nth-of-type(2) p');
-topDivPara2.textContent=`About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
-interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.`
+topDivPara2.textContent=siteContent['main-content']['about-content']
 
 const botDivHead = document.querySelector('.bottom-content .text-content h4')
-botDivHead.textContent='Services';
+botDivHead.textContent=siteContent['main-content']['services-h4'];
 const botDivPara = document.querySelector('.bottom-content .text-content p')
-botDivPara.textContent=`Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,
-in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis`
+botDivPara.textContent=siteContent['main-content']['services-content']
 
 const botDivHead2 = document.querySelector('.bottom-content .text-content:nth-of-type(2) h4')
 // console.log(botDivHead2)
-botDivHead2.textContent='Product';
+botDivHead2.textContent=siteContent['main-content']['product-h4'];
 
 const botDivPara2 = document.querySelector('.bottom-content .text-content:nth-of-type(2) p')
-botDivPara2.textContent=`Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
-interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.`
+botDivPara2.textContent=siteContent['main-content']['product-content']
 
 const botDivHead3 = document.querySelector('.bottom-content .text-content:nth-of-type(3) h4')
-botDivHead3.textContent = `Vision`
+botDivHead3.textContent = siteContent['main-content']['vision-h4']
 
 const botDivPara3 = document.querySelector('.bottom-content .text-content:nth-of-type(3) p')
-botDivPara3.textContent=`Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
-interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.`
+botDivPara3.textContent=siteContent['main-content']['vision-content']
 
 const footerTitle = document.querySelector('.contact h4')
 footerTitle.textContent=`Contact`
@@ -145,13 +135,13 @@ const address1 = footerTitle.nextElementSibling;
 address1.innerText="123 Way 456 Street\n Somewhere, USA"
 
 const phoneNum = address1.nextElementSibling;
-phoneNum.textContent="1 (888) 888-8888 "
+phoneNum.textContent=siteContent['contact']['phone']
 
 const email =phoneNum.nextElementSibling;
-email.textContent="sales@greatidea.io"
+email.textContent=siteContent['contact']['email']
 
 const footer = document.querySelector('footer p')
-footer.textContent=`Copyright Great Idea! 2018`
+footer.textContent=siteContent['footer']['copyright']
 
 
 //need to add 2 new nav items
